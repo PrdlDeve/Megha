@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:j25qbvT5Ps9rACJ2idyjSKfD88Onl6VtoZHfAXbI"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Laptop_User/Desktop/Talend/Talend_Workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="JDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CvouqAQWNNpmCfBmMarx6WMWCvboPyqHpHNKtED4"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+  </parameters>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/Laptop_User/Desktop/Talend/Talend_Workspace&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo HELLO&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// Define the folder paths&#10;String dbfFolderPath = &quot;C:/Users/Laptop_User/Desktop/Talend/Client/ICICI Pru/DBF&quot;;&#10;String csvFolderPath = &quot;C:/Users/Laptop_User/Desktop/Talend/Client/ICICI Pru/CSV&quot;;&#10;&#10;// Create the output folder if it does not exist&#10;File csvFolder = new File(csvFolderPath);&#10;if (!csvFolder.exists()) {&#10;    csvFolder.mkdirs();&#10;}&#10;&#10;// Get the list of .dbf files in the folder&#10;File dbfFolder = new File(dbfFolderPath);&#10;File[] dbfFiles = dbfFolder.listFiles((dir, name) -&gt; name.toLowerCase().endsWith(&quot;.dbf&quot;));&#10;&#10;if (dbfFiles != null) {&#10;    for (File dbfFile : dbfFiles) {&#10;        String dbfFilePath = dbfFile.getAbsolutePath();&#10;        String csvFilePath = csvFolderPath + &quot;/&quot; + dbfFile.getName().replace(&quot;.dbf&quot;, &quot;.csv&quot;);&#10;&#10;        // Variables for file handling&#10;        FileInputStream fis = null;&#10;        DBFReader reader = null;&#10;        PrintWriter writer = null;&#10;&#10;        try {&#10;            // Initialize file input and reader&#10;            fis = new FileInputStream(dbfFilePath);&#10;            reader = new DBFReader(fis);&#10;            writer = new PrintWriter(csvFilePath, StandardCharsets.UTF_8);&#10;&#10;            // Write CSV header&#10;            int numberOfFields = reader.getFieldCount();&#10;            for (int i = 0; i &lt; numberOfFields; i++) {&#10;                DBFField field = reader.getField(i);&#10;                writer.print(field.getName());&#10;                if (i &lt; numberOfFields - 1) {&#10;                    writer.print(&quot;,&quot;);&#10;                }&#10;            }&#10;            writer.println();&#10;&#10;            // Write CSV rows&#10;            Object[] rowObjects;&#10;            NumberFormat numberFormat = NumberFormat.getInstance(Locale.US); // Ensure NumberFormat is imported and used&#10;            while ((rowObjects = reader.nextRecord()) != null) {&#10;                for (int i = 0; i &lt; rowObjects.length; i++) {&#10;                    Object value = rowObjects[i];&#10;                    if (value == null) {&#10;                        writer.print(&quot;&quot;); // Write an empty string for null fields&#10;                    } else {&#10;                        String stringValue = value.toString();&#10;                        // Handle numeric values&#10;                        try {&#10;                            if (stringValue.trim().isEmpty()) {&#10;                                writer.print(&quot;&quot;); // Handle empty strings as empty&#10;                            } else {&#10;                                // Check if the value can be parsed as a number&#10;                                try {&#10;                                    writer.print(numberFormat.parse(stringValue).toString()); // Parse numeric values&#10;                                } catch (ParseException ex) {&#10;                                    writer.print(stringValue); // If parsing fails, print the string value&#10;                                }&#10;                            }&#10;                        } catch (Exception e) {&#10;                            writer.print(stringValue); // Print the string value if parsing fails&#10;                        }&#10;                    }&#10;                    if (i &lt; rowObjects.length - 1) {&#10;                        writer.print(&quot;,&quot;);&#10;                    }&#10;                }&#10;                writer.println();&#10;            }&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;        } finally {&#10;            // Close resources&#10;            try {&#10;                if (fis != null) {&#10;                    fis.close();&#10;                }&#10;                if (writer != null) {&#10;                    writer.close();&#10;                }&#10;            } catch (Exception e) {&#10;                e.printStackTrace();&#10;            }&#10;        }&#10;    }&#10;} else {&#10;    System.out.println(&quot;No .dbf files found in the folder: &quot; + dbfFolderPath);&#10;}&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.*;&#10;import java.nio.charset.StandardCharsets;&#10;import java.text.NumberFormat;&#10;import java.text.ParseException;&#10;import java.util.Locale;&#10;import com.linuxense.javadbf.DBFField;&#10;import com.linuxense.javadbf.DBFReader;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLibraryLoad_1"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;mvn:org.talend.libraries/javadbf-0.4.0/6.0.0-SNAPSHOT/jar&quot;"/>
+    <elementParameter field="TABLE" name="HOTLIBS">
+      <elementValue elementRef="LIBPATH" value=""/>
+    </elementParameter>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLibraryLoad_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_838a1cf1-f858-4693-bfa0-e1bb214745d5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8asnft6/aNSJAXI196MQ5TL/88vKMTaZ33mmZtGa8nYe8LQOdTqkWatUy/XHtCz2LZcrdxz4GLB7&#13;
+2c3J9govGA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d3bd8e50-dddc-4190-ab80-9df73d8feb56"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pB9wlu//weEqHQlmoPl/jvRXczMenQXRvh+jsK5SKuRox78l/oVPI0RnYQSLAQw78MOiRBWkpqJt&#13;
+hi9JEyHaFw==</DigestValue></Reference></SignedInfo><SignatureValue>DBwDjgDoWmAIpB7vt3XRZvSpmtO17HiHKXlUmSu7F8Tuitmp6un0lbwnsGi3S/iq5wxOXIbNfsyw&#13;
+owt5kJrZr9HzA0Jktbp1xJlDjvyA6gya3nY27Gp6r9zj2fdORUIwq4BHVElXfXmcAxKJfgwifsLJ&#13;
+Tquwi+oQckiJOVNWlu7BpsldNby+yti/wHiwqvPePN/DOixnfg0Y0ws/MqdSpakHCbi0Z2tVIM63&#13;
+ii4lz3rrFpAgHfDALlBWslEAZlbV4fWE76MqQDqfc+/6tIDr7tqH45W6ZT3Cd3Wdolc2s0zLJoJA&#13;
+kUiXF6ZcuYnlddtGk5xvDCgdwJUifaqpFLO61Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d3bd8e50-dddc-4190-ab80-9df73d8feb56" Target="#_838a1cf1-f858-4693-bfa0-e1bb214745d5"><Timestamp>2024-08-07 04:55:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

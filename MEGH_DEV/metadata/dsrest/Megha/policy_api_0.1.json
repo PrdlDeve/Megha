@@ -1,0 +1,91 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "UseCase1",
+    "description" : "API to distribute policy data",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "security" : [ {
+    "Bearer authentication" : [ ]
+  } ],
+  "paths" : {
+    "/Policy" : {
+      "get" : {
+        "summary" : "Get the list of Policy Details",
+        "description" : "Loads the list of policy details",
+        "responses" : {
+          "200" : {
+            "description" : "status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Policies"
+                },
+                "example" : "{\n\t\"PolicyID\": \"1\",\n\t\"PolicyholderID\": \"1\",\n\t\"PolicyNumber\": \"POL-1\",\n\t\"CoverageDetails\": \"Coverage details for policy 1\",\n\t\"PremiumAmount\": \"956.02\"\n\t\t\t\n}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Policy" : {
+        "type" : "object",
+        "properties" : {
+          "PolicyID" : {
+            "type" : "string"
+          },
+          "PolicyholderID" : {
+            "type" : "string"
+          },
+          "PolicyNumber" : {
+            "type" : "string"
+          },
+          "CoverageDetails" : {
+            "type" : "string"
+          },
+          "PremiumAmount" : {
+            "type" : "string"
+          }
+        },
+        "example" : "{\r\n\t\"PolicyID\": \"1\",\r\n\t\"PolicyholderID\": \"1\",\r\n\t\"PolicyNumber\": \"POL-1\",\r\n\t\"CoverageDetails\": \"Coverage details for policy 1\",\r\n\t\"PremiumAmount\": \"956.02\"\r\n\t\r\n}"
+      },
+      "Policies" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/Policy"
+        }
+      },
+      "Error" : {
+        "type" : "object",
+        "required" : [ "PolicyID" ],
+        "properties" : {
+          "PolicyID" : {
+            "type" : "string"
+          },
+          "errorCode" : {
+            "type" : "integer",
+            "format" : "int32",
+            "minimum" : 400,
+            "maximum" : 599
+          },
+          "errorMessage" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "Bearer authentication" : {
+        "type" : "http",
+        "scheme" : "bearer"
+      }
+    }
+  }
+}
