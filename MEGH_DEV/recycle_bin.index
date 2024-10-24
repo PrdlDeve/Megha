@@ -2,11 +2,20 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/fileXml/www-talend-org/service/testPortType</deletedFolders>
   <deletedFolders>metadata/fileXml/www-talend-org/service/testPortType/testOperation</deletedFolders>
+  <deletedFolders>process/Person_ESB_Service_Pranita_V2</deletedFolders>
+  <deletedFolders>process/Person_ESB_Service_Pranita_V2/Person_ESB_Service_Pranita_V2PortType</deletedFolders>
+  <deletedFolders>process/Person_ESB_Service_Pranita_V2/Person_ESB_Service_Pranita_V2PortType/Person_ESB_Service_Pranita_V2Operation</deletedFolders>
+  <deletedFolders>process/Product_id</deletedFolders>
+  <deletedFolders>process/Product_id/Product_idPortType</deletedFolders>
+  <deletedFolders>process/Product_id/Product_idPortType/Product_idOperation</deletedFolders>
   <deletedItems id="_8PgjEEmAEe-Q0cwxw2OGFg" path="www-talend-org/service/testPortType/testOperation" type="METADATA_FILE_XML"/>
   <deletedItems id="_8QdlUUmAEe-Q0cwxw2OGFg" path="www-talend-org/service/testPortType/testOperation" type="METADATA_FILE_XML"/>
+  <deletedItems id="_4URYAGj6Ee-0IYiWAg6PKA" path="API_Troubleshooting" type="PROCESS"/>
   <deletedItems id="_Du-_cFCfEe-QL961vBNomw" path="ICICI_Pru_POC" type="PROCESS"/>
   <deletedItems id="_qV4xsE8IEe-_rsq39z5L-g" path="ICICI_Pru_POC" type="PROCESS"/>
   <deletedItems id="_xwdhIGw5Ee-Bpdck-Kxw9Q" path="Megha/Talend_Academy_API_Services" type="PROCESS"/>
   <deletedItems id="_LFC-oEprEe-bEOCWzAGfNg" path="Megha_SOAP" type="PROCESS"/>
+  <deletedItems id="_YA5lsEW4Ee-jRLftcPihSQ" path="Person_ESB_Service_Pranita_V2/Person_ESB_Service_Pranita_V2PortType/Person_ESB_Service_Pranita_V2Operation" type="PROCESS"/>
+  <deletedItems id="_lwG1wEW6Ee-jRLftcPihSQ" path="Person_ESB_Service_Pranita_V2/Person_ESB_Service_Pranita_V2PortType/Person_ESB_Service_Pranita_V2Operation" type="PROCESS"/>
   <deletedItems id="_6g4eEEmAEe-Q0cwxw2OGFg" path="" type="SERVICES"/>
 </recyclebin:RecycleBin>
