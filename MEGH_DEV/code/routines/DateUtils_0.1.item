@@ -1,0 +1,33 @@
+package routines;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class DateUtils {
+
+    // Method to get the next payment date based on the last payment date and frequency
+    public static String getNextPaymentDate(Date lastPaymentDate, String frequency) throws Exception {
+        // Create a calendar instance to manipulate the last payment date
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(lastPaymentDate);  // Set the calendar to the last payment date
+        
+        // Add time based on the frequency
+        if (frequency.equalsIgnoreCase("monthly")) {
+            cal.add(Calendar.MONTH, 1);  // Add 1 month to the date
+        } else if (frequency.equalsIgnoreCase("weekly")) {
+            cal.add(Calendar.WEEK_OF_YEAR, 1);  // Add 1 week to the date
+        } else if (frequency.equalsIgnoreCase("bi-weekly")) {
+            cal.add(Calendar.WEEK_OF_YEAR, 2);  // Add 2 weeks to the date
+        } else {
+            throw new IllegalArgumentException("Unknown payment frequency: " + frequency);
+        }
+        
+        // Get the next payment date from the calendar
+        Date nextPaymentDate = cal.getTime();
+        
+        // Format the next payment date as a string in the "yyyy-MM-dd" format
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(nextPaymentDate);  // Return the formatted date as a string
+    }
+}
