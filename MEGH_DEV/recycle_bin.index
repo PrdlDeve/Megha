@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedFolders>process/Banking_Demo</deletedFolders>
-  <deletedItems id="_2bZ3cDrPEe-2VeFhC29sBQ" path="Banking_Demo" type="PROCESS"/>
-  <deletedItems id="_Erk8cEQbEe-p2uMpNBtEaw" path="Banking_Demo" type="PROCESS"/>
-  <deletedItems id="_JrS8ANiKEe-XAOTSSYNL3Q" path="Banking_Demo" type="PROCESS"/>
-  <deletedItems id="_e4TOkDqEEe-L17apX-73jA" path="Banking_Demo" type="PROCESS"/>
-  <deletedItems id="_mNjk4DqEEe-L17apX-73jA" path="Banking_Demo" type="PROCESS"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
