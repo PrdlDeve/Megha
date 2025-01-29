@@ -422,22 +422,14 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_AlY74NiUEe-DdKgUv25d4w",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_snxSUN0yEe-NRMdcn4l3Bw",
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_AlY74NiUEe-DdKgUv25d4w",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_sq9JMN0yEe-NRMdcn4l3Bw",
@@ -445,10 +437,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_IA-SwNiLEe-XAOTSSYNL3Q",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_IA-SwNiLEe-XAOTSSYNL3Q - metadata",
     "version" : "Latest",
     "type" : "schema"
