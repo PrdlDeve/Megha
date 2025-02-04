@@ -1,0 +1,246 @@
+!SESSION 2025-01-29 11:02:42.271 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.10
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:44.614
+!MESSAGE 2025-01-29 11:02:44,610 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.common, Src: SourceImageBean [bundleName=org.talend.metadata.bridge.ui, imagePath=icons/import_action.gif, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:44.616
+!MESSAGE 2025-01-29 11:02:44,615 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.common, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:44.623
+!MESSAGE 2025-01-29 11:02:44,623 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.common, /resources/scaled/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.397
+!MESSAGE 2025-01-29 11:02:45,396 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: com.oaklandsw.gui, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.404
+!MESSAGE 2025-01-29 11:02:45,404 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: com.oaklandsw.transform, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.702
+!MESSAGE 2025-01-29 11:02:45,701 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.bigdata, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.707
+!MESSAGE 2025-01-29 11:02:45,706 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.camel, Src: SourceImageBean [bundleName=org.talend.camel.designer, imagePath=icons/bean.gif, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.707
+!MESSAGE 2025-01-29 11:02:45,707 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.camel, Src: SourceImageBean [bundleName=org.talend.camel.designer, imagePath=icons/resource.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.707
+!MESSAGE 2025-01-29 11:02:45,707 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.camel, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.712
+!MESSAGE 2025-01-29 11:02:45,712 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.dq, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.721
+!MESSAGE 2025-01-29 11:02:45,721 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.dsql.map.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.726
+!MESSAGE 2025-01-29 11:02:45,726 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.dsql.map.editor.testrun, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.732
+!MESSAGE 2025-01-29 11:02:45,731 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.flattener.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.750
+!MESSAGE 2025-01-29 11:02:45,749 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/etool16/undo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.750
+!MESSAGE 2025-01-29 11:02:45,750 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/dtool16/undo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.750
+!MESSAGE 2025-01-29 11:02:45,750 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/etool16/redo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:02:45.751
+!MESSAGE 2025-01-29 11:02:45,751 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/dtool16/redo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.751
+!MESSAGE 2025-01-29 11:02:45,751 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.themes.common, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.756
+!MESSAGE 2025-01-29 11:02:45,755 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.treemapper, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.760
+!MESSAGE 2025-01-29 11:02:45,760 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.unflattener.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.765
+!MESSAGE 2025-01-29 11:02:45,765 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.views, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:45.850
+!MESSAGE 2025-01-29 11:02:45,849 INFO  org.talend.rcp.intro.Application  - 
+!!------------------------------------------------------------------------------!!
+!!                                                                              !!
+!!                                    TALEND                                    !!
+!!   Starting Talend's platform log system.VERSION= 8.0.1.20241219_0901-patch   !!
+!!                                                                              !!
+!!------------------------------------------------------------------------------!!
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:47.261
+!MESSAGE 2025-01-29 11:02:47,261 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:47.262
+!MESSAGE 2025-01-29 11:02:47,261 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:47.359
+!MESSAGE 2025-01-29 11:02:47,358 INFO  org.talend.studiolite.p2.api.P2Util  - Is upgrading target platform: false
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:53.284
+!MESSAGE 2025-01-29 11:02:53,283 INFO  org.talend.repository.ui.login.LoginProjectPage  - start to update git storage mode
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:02:53.320
+!MESSAGE 2025-01-29 11:02:53,319 INFO  org.talend.repository.ui.login.LoginProjectPage  - updated git storage mode to standard
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-29 11:03:10.489
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2025-01-29 11:04:05.915 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.10
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:08.110
+!MESSAGE 2025-01-29 11:04:08,106 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.common, Src: SourceImageBean [bundleName=org.talend.metadata.bridge.ui, imagePath=icons/import_action.gif, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:08.112
+!MESSAGE 2025-01-29 11:04:08,111 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.common, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:08.118
+!MESSAGE 2025-01-29 11:04:08,118 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.common, /resources/scaled/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:08.790
+!MESSAGE 2025-01-29 11:04:08,789 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: com.oaklandsw.gui, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:08.796
+!MESSAGE 2025-01-29 11:04:08,796 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: com.oaklandsw.transform, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.061
+!MESSAGE 2025-01-29 11:04:09,060 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.bigdata, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.067
+!MESSAGE 2025-01-29 11:04:09,066 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.camel, Src: SourceImageBean [bundleName=org.talend.camel.designer, imagePath=icons/bean.gif, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.067
+!MESSAGE 2025-01-29 11:04:09,067 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.themes.camel, Src: SourceImageBean [bundleName=org.talend.camel.designer, imagePath=icons/resource.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.068
+!MESSAGE 2025-01-29 11:04:09,068 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.camel, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.087
+!MESSAGE 2025-01-29 11:04:09,086 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.themes.dq, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.096
+!MESSAGE 2025-01-29 11:04:09,096 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.dsql.map.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.102
+!MESSAGE 2025-01-29 11:04:09,101 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.dsql.map.editor.testrun, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.107
+!MESSAGE 2025-01-29 11:04:09,107 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.flattener.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.127
+!MESSAGE 2025-01-29 11:04:09,127 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/etool16/undo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.128
+!MESSAGE 2025-01-29 11:04:09,127 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/dtool16/undo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.128
+!MESSAGE 2025-01-29 11:04:09,128 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/etool16/redo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 2 0 2025-01-29 11:04:09.129
+!MESSAGE 2025-01-29 11:04:09,128 WARN  org.talend.themes.common.ImagesMapping  - Duplicate image defination in: org.talend.transform.themes.common, Src: SourceImageBean [bundleName=org.eclipse.ui, imagePath=icons/full/dtool16/redo_edit.png, lifeCycle=null]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.129
+!MESSAGE 2025-01-29 11:04:09,129 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.themes.common, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.134
+!MESSAGE 2025-01-29 11:04:09,134 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.treemapper, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.139
+!MESSAGE 2025-01-29 11:04:09,138 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.unflattener.editor, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.144
+!MESSAGE 2025-01-29 11:04:09,144 INFO  org.talend.themes.common.ImagesMapping  - Loaded icon defination: org.talend.transform.views, /resources/mapping.json
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.215
+!MESSAGE 2025-01-29 11:04:09,214 INFO  org.talend.rcp.intro.Application  - 
+!!------------------------------------------------------------------------------!!
+!!                                                                              !!
+!!                                    TALEND                                    !!
+!!   Starting Talend's platform log system.VERSION= 8.0.1.20241219_0901-patch   !!
+!!                                                                              !!
+!!------------------------------------------------------------------------------!!
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.415
+!MESSAGE 2025-01-29 11:04:09,415 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.416
+!MESSAGE 2025-01-29 11:04:09,415 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:09.429
+!MESSAGE 2025-01-29 11:04:09,429 INFO  org.talend.studiolite.p2.api.P2Util  - Is upgrading target platform: false
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-29 11:04:09.536
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:12.700
+!MESSAGE 2025-01-29 11:04:12,700 INFO  org.talend.repository.ui.login.LoginProjectPage  - start to update git storage mode
+
+
+!ENTRY org.talend.platform.logging 1 0 2025-01-29 11:04:12.729
+!MESSAGE 2025-01-29 11:04:12,729 INFO  org.talend.repository.ui.login.LoginProjectPage  - git storage mode was already set, standard: true
+
