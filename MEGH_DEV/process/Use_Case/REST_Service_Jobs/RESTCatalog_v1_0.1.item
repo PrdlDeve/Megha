@@ -246,28 +246,51 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="movie_id" type="id_Integer" xpath="row1/movie_id" nullable="false"/>
-        <nodes name="title" type="id_String" xpath="row1/title" nullable="false"/>
-        <nodes name="genre" type="id_String" xpath="row1/genre"/>
-        <nodes name="release_year" type="id_Date" xpath="row1/release_year"/>
-        <nodes name="director" type="id_String" xpath="row1/director"/>
-        <nodes name="rating" type="id_BigDecimal" xpath="row1/rating"/>
-        <nodes name="duration_minutes" type="id_Integer" xpath="row1/duration_minutes"/>
-        <nodes name="description" type="id_String" xpath="row1/description"/>
-        <nodes name="created_at" type="id_Date" xpath="row1/created_at"/>
-        <nodes name="updated_at" type="id_Date" xpath="row1/updated_at"/>
+        <nodes name="movie_id" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/movie_id" nullable="false"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/title" nullable="false"/>
+        <nodes name="genre" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/genre"/>
+        <nodes name="release_year" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/release_year"/>
+        <nodes name="director" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/director"/>
+        <nodes name="rating" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/rating"/>
+        <nodes name="duration_minutes" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/duration_minutes"/>
+        <nodes name="description" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row1/description"/>
+        <nodes name="created_at" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row1/created_at"/>
+        <nodes name="updated_at" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row1/updated_at"/>
       </inputTrees>
-      <outputTrees name="sendMovies">
+      <outputTrees activateCondensedTool="true" name="sendMovies" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="sendMovies/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="catalog" type="id_String" xpath="sendMovies.body:/catalog" loop="true" main="true"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="catalog" expression="" type="id_String" xpath="sendMovies.body:/catalog" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="movie" expression="" type="id_String" xpath="sendMovies.body:/catalog/movie" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="movie_id" expression="row1.movie_id" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="sendMovies.body:/catalog/movie/movie_id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="sendMovies.body:/catalog/movie/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="genre" expression="row1.genre" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="sendMovies.body:/catalog/movie/genre"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="release_year" expression="row1.release_year" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="sendMovies.body:/catalog/movie/release_year"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row1.director" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="sendMovies.body:/catalog/movie/director"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="rating" expression="row1.rating" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="sendMovies.body:/catalog/movie/rating"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="duration_minutes" expression="row1.duration_minutes" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="sendMovies.body:/catalog/movie/duration_minutes"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="description" expression="row1.description" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="sendMovies.body:/catalog/movie/description"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="created_at" expression="row1.created_at" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="sendMovies.body:/catalog/movie/created_at"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="updated_at" expression="row1.updated_at" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="sendMovies.body:/catalog/movie/updated_at"/>
+            </children>
+          </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
-    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
     <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
     <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
@@ -275,7 +298,7 @@
     <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTResponse_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="displayMovies" lineStyle="0" metaname="displayMovies" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
