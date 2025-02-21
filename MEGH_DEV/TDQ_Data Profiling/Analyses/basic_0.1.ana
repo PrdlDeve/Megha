@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_TKSmAe6DEe-3BtIhUpyT3w" name="basic" creationDate="2025-02-19T11:05:16.575+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_j6JOi-6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Blank_text_0.1.pattern#_j6QjQO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Empty_text_0.1.pattern#_j6cwgO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Home_Row_Text_0.1.pattern#_j6nIkO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Linux_Path_Verify_0.1.pattern#_j6yuwO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/No_special_chart_0.1.pattern#_j6-8AO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Random_sequence_of_text_0.1.pattern#_j7ItAO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_blank_0.1.pattern#_j7SeAO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_space_0.1.pattern#_j7ddIO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_uppercase_0.1.pattern#_j7pqYO6DEe-3BtIhUpyT3w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/text/Uppercased_Single_Word_0.1.pattern#_j7xmMO6DEe-3BtIhUpyT3w"/>
+    <taggedValue xmi:id="_TKSmAu6DEe-3BtIhUpyT3w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_TKSmA-6DEe-3BtIhUpyT3w" tag="Author" value="megha.m@nfr.predoole.com"/>
+    <taggedValue xmi:id="_TKSmBO6DEe-3BtIhUpyT3w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_TKSmBe6DEe-3BtIhUpyT3w" tag="Description" value=""/>
+    <taggedValue xmi:id="_TKSmBu6DEe-3BtIhUpyT3w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_j6Ince6DEe-3BtIhUpyT3w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_j6Incu6DEe-3BtIhUpyT3w" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_j6JOgO6DEe-3BtIhUpyT3w" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_j6KcoO6DEe-3BtIhUpyT3w" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_TKSmB-6DEe-3BtIhUpyT3w">
+      <connection href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_CnW4AI90Ee-e1umB8A-2uw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp_Y98Ee-e1umB8A-2uw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+    </context>
+    <results xmi:id="_TKSmCO6DEe-3BtIhUpyT3w">
+      <resultMetadata xmi:id="_TKSmCe6DEe-3BtIhUpyT3w"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_j6JOge6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6JOgu6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_j6JOg-6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6JOhO6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_j6JOhe6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6JOhu6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_j6JOh-6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6JOiO6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_j6JOie6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6JOiu6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp8Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:TextIndicator" xmi:id="_j6JOje6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J1kO6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Text_Statistics_0.1.definition#_yb9x0zh8Ed2XmO7pl5Yuyg"/>
+        <averageLengthIndicator xmi:id="_j6J1ke6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1ku6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1k-6DEe-3BtIhUpyT3w" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+        </averageLengthIndicator>
+        <maxLengthIndicator xmi:id="_j6J1lO6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1le6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1lu6DEe-3BtIhUpyT3w" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        </maxLengthIndicator>
+        <minLengthIndicator xmi:id="_j6J1l-6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1mO6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1me6DEe-3BtIhUpyT3w" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        </minLengthIndicator>
+        <minLengthWithBlankIndicator xmi:id="_j6J1mu6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1m-6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1nO6DEe-3BtIhUpyT3w"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+        </minLengthWithBlankIndicator>
+        <minLengthWithNullIndicator xmi:id="_j6J1ne6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1nu6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1n-6DEe-3BtIhUpyT3w" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+        </minLengthWithNullIndicator>
+        <minLengthWithBlankNullIndicator xmi:id="_j6J1oO6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1oe6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1ou6DEe-3BtIhUpyT3w" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+        </minLengthWithBlankNullIndicator>
+        <maxLengthWithBlankIndicator xmi:id="_j6J1o-6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1pO6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1pe6DEe-3BtIhUpyT3w"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankIndicator>
+        <maxLengthWithNullIndicator xmi:id="_j6J1pu6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1p-6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1qO6DEe-3BtIhUpyT3w" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithNullIndicator>
+        <maxLengthWithBlankNullIndicator xmi:id="_j6J1qe6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1qu6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1q-6DEe-3BtIhUpyT3w" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankNullIndicator>
+        <avgLengthWithBlankIndicator xmi:id="_j6J1rO6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1re6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1ru6DEe-3BtIhUpyT3w"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankIndicator>
+        <avgLengthWithNullIndicator xmi:id="_j6J1r-6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1sO6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1se6DEe-3BtIhUpyT3w" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithNullIndicator>
+        <avgLengthWithBlankNullIndicator xmi:id="_j6J1su6DEe-3BtIhUpyT3w">
+          <parameters xmi:id="_j6J1s-6DEe-3BtIhUpyT3w">
+            <textParameter xmi:id="_j6J1tO6DEe-3BtIhUpyT3w" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankNullIndicator>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1te6DEe-3BtIhUpyT3w" name="Blank text">
+        <parameters xmi:id="_j6J1tu6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1t-6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Blank_text_0.1.pattern#_N7yi0Gk3Ed2I1bT57-sHUw"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1uO6DEe-3BtIhUpyT3w" name="Empty text">
+        <parameters xmi:id="_j6J1ue6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1uu6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Empty_text_0.1.pattern#_vZ6_IGk6Ed2I1bT57-sHUw"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1u-6DEe-3BtIhUpyT3w" name="Home Row Text">
+        <parameters xmi:id="_j6J1vO6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1ve6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Home_Row_Text_0.1.pattern#_e4vUoYyZEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1vu6DEe-3BtIhUpyT3w" name="Linux Path Verify">
+        <parameters xmi:id="_j6J1v-6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1wO6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Linux_Path_Verify_0.1.pattern#_IqpTEIyfEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1we6DEe-3BtIhUpyT3w" name="No special chart">
+        <parameters xmi:id="_j6J1wu6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1w-6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/No_special_chart_0.1.pattern#_6rm3QIycEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1xO6DEe-3BtIhUpyT3w" name="Random sequence of text">
+        <parameters xmi:id="_j6J1xe6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1xu6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Random_sequence_of_text_0.1.pattern#_gDqDcP9eEd2mwaQf90ozSg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1x-6DEe-3BtIhUpyT3w" name="Starts with blank">
+        <parameters xmi:id="_j6J1yO6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1ye6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_blank_0.1.pattern#_18GtIIyaEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1yu6DEe-3BtIhUpyT3w" name="Starts with space">
+        <parameters xmi:id="_j6J1y-6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1zO6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_space_0.1.pattern#_scYqYIyaEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J1ze6DEe-3BtIhUpyT3w" name="Starts with uppercase">
+        <parameters xmi:id="_j6J1zu6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J1z-6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Starts_with_uppercase_0.1.pattern#_53rX8AMvEeKk6OZDw5mXOQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_j6J10O6DEe-3BtIhUpyT3w" name="Uppercased Single Word">
+        <parameters xmi:id="_j6J10e6DEe-3BtIhUpyT3w">
+          <dataValidDomain xmi:id="_j6J10u6DEe-3BtIhUpyT3w">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/text/Uppercased_Single_Word_0.1.pattern#_FyTwIHnTEd2weu9skTiCqA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp9Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_j6J11O6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J11e6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Mode_0.1.definition#_ccIR4RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_j6J11u6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J11-6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BinFrequencyIndicator" xmi:id="_j6J12O6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J12e6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Bin_Frequency_Table_0.1.definition#_OCCCEBl4EeGMPdtm417kpw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_j6J12u6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J12-6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BinLowFrequencyIndicator" xmi:id="_j6J13O6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J13e6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxp-Y98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Bin_Low_Frequency_Table_0.1.definition#_LAwpcBl4EeGMPdtm417kpw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BoxIndicator" xmi:id="_j6J14O6DEe-3BtIhUpyT3w">
+        <parameters xmi:id="_j6J14e6DEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Summary_Statistics_0.1.definition#_ccI48BF2Ed2PKb6nEJEvhw"/>
+        <IQR xmi:id="_j6J14u6DEe-3BtIhUpyT3w">
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Inter_Quartile_Range_0.1.definition#_ccI48xF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xsi:type="dataquality.indicators:LowerQuartileIndicator" xmi:id="_j6J14-6DEe-3BtIhUpyT3w">
+            <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Lower_Quartile_0.1.definition#_ccI49BF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xsi:type="dataquality.indicators:UpperQuartileIndicator" xmi:id="_j6J15O6DEe-3BtIhUpyT3w">
+            <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Upper_Quartile_0.1.definition#_ccI49RF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </IQR>
+        <rangeIndicator xmi:id="_j6J15e6DEe-3BtIhUpyT3w">
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xmi:id="_j6J15u6DEe-3BtIhUpyT3w">
+            <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xmi:id="_j6J15-6DEe-3BtIhUpyT3w">
+            <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </rangeIndicator>
+        <meanIndicator xmi:id="_j6J16O6DEe-3BtIhUpyT3w">
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Mean_0.1.definition#_ccI48RF2Ed2PKb6nEJEvhw"/>
+        </meanIndicator>
+        <medianIndicator xmi:id="_j6J16e6DEe-3BtIhUpyT3w">
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/connection_MovieAPI_SSMS_0.1.item#_ulxqAY98Ee-e1umB8A-2uw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Median_0.1.definition#_ccI48hF2Ed2PKb6nEJEvhw"/>
+        </medianIndicator>
+      </indicators>
+    </results>
+    <parameters xmi:id="_TKSmCu6DEe-3BtIhUpyT3w" dataFilter="_j73s0O6DEe-3BtIhUpyT3w" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_j6IncO6DEe-3BtIhUpyT3w" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_j73s0O6DEe-3BtIhUpyT3w" name="basic">
+    <ranges xmi:id="_j73s0e6DEe-3BtIhUpyT3w">
+      <expressions xmi:id="_j73s0u6DEe-3BtIhUpyT3w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_j73s0-6DEe-3BtIhUpyT3w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
