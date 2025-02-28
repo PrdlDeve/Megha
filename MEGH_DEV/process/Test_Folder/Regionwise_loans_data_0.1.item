@@ -101,6 +101,16 @@
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -112,13 +122,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BANKING_DEV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:maSO68IVpZnuOD5wwsFFAuzvmO9IQq9Xad6WxIf7vbFbW6v4xY8oN0FDJw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fgMqiDY2QXD7jsh1PKWIQL7OZfGnnGM1ssh6n4n9XThufhfM74P2nYUi6g=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_NRR1QO0EEe-nwKe3MbjwJA - ActiveLoansView1" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ActiveLoansView1&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.ActiveLoansView.CustomerID,&#xA;&#x9;&#x9;dbo.ActiveLoansView.LoanType,&#xA;&#x9;&#x9;dbo.ActiveLoansView.LoanAmount,&#xA;&#x9;&#x9;dbo.ActiveLoansView.InterestRate,&#xA;&#x9;&#x9;dbo.ActiveLoansView.StartDate,&#xA;&#x9;&#x9;dbo.ActiveLoansView.EndDate&#xA;FROM&#x9;dbo.ActiveLoansView&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.ActiveLoansView1.CustomerID,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.LoanType,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.LoanAmount,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.InterestRate,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.StartDate,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.EndDate,&#xA;&#x9;&#x9;dbo.ActiveLoansView1.\&quot;Run_2025-02-28 12_14_04\&quot;&#xA;FROM&#x9;dbo.ActiveLoansView1&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -144,12 +156,14 @@
       <elementValue elementRef="TRIM" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndDate" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Run_2025_02_28_12_14_04" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="ActiveLoansView" name="tDBInput_2">
+    <metadata connector="FLOW" label="ActiveLoansView1" name="tDBInput_2">
       <column comment="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -166,6 +180,9 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="EndDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="Run_2025_02_28_12_14_04" nullable="true" originalDbColumnName="Run_2025-02-28 12_14_04" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -206,9 +223,12 @@
       <column comment="" key="false" length="200" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="23" name="Run_2025_02_28_12_14_04" nullable="true" originalDbColumnName="Run_2025-02-28 12_14_04" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="AggregatedLoans">
         <mapperTableEntries name="ID" expression="row2.ID " type="id_Integer"/>
@@ -218,6 +238,7 @@
         <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" expression="row1.EndDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="State" expression="row2.State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Run_2025_02_28_12_14_04" expression="row1.Run_2025_02_28_12_14_04 " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CustomerID" type="id_Integer"/>
@@ -226,6 +247,7 @@
         <mapperTableEntries name="InterestRate" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="StartDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Run_2025_02_28_12_14_04" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ID" expression="row1.CustomerID " type="id_Integer" operator="="/>
@@ -256,8 +278,6 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BANKING_DEV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m9WTVNlbBQzT6ZKt5LpLBuOMK/ib3FaKMfR4ldZbBoA46gSVei+VMX1wGA=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_NRR1QO0EEe-nwKe3MbjwJA - Customers" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customers&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -404,6 +424,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="AggregatedLoans" lineStyle="0" metaname="AggregatedLoans" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Run_2025_02_28_11_20_39" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Run_2025_02_28_12_14_04" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="AggregatedLoans" show="false"/>
   </connection>
