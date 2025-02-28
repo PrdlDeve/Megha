@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_rCauMO6CEe-3BtIhUpyT3w" name="column" creationDate="2025-02-19T11:00:47.314+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_S1-YUO6CEe-3BtIhUpyT3w"/>
+    <taggedValue xmi:id="_rCauMe6CEe-3BtIhUpyT3w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_rCauMu6CEe-3BtIhUpyT3w" tag="Author" value="megha.m@nfr.predoole.com"/>
+    <taggedValue xmi:id="_rCauM-6CEe-3BtIhUpyT3w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_rCauNO6CEe-3BtIhUpyT3w" tag="Description" value=""/>
+    <taggedValue xmi:id="_rCauNe6CEe-3BtIhUpyT3w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_rLt0Ie6CEe-3BtIhUpyT3w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_rLt0Iu6CEe-3BtIhUpyT3w" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_rLt0I-6CEe-3BtIhUpyT3w" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_rLzTsO6CEe-3BtIhUpyT3w" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_rCauNu6CEe-3BtIhUpyT3w">
+      <connection href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_mpI7kMD1Ee-VL9hfCaZTnQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+    </context>
+    <results xmi:id="_rCauN-6CEe-3BtIhUpyT3w">
+      <resultMetadata xmi:id="_rCauOO6CEe-3BtIhUpyT3w" executionDate="2025-02-19T11:01:43.298+0530" executionDuration="1765" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_rLvpUO6CEe-3BtIhUpyT3w" count="2890" computed="true">
+        <parameters xmi:id="_rLvpUe6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYUpMO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_y7rwgO6CEe-3BtIhUpyT3w" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_y7rwge6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_y7rwgu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_y7rwg-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_rLvpUu6CEe-3BtIhUpyT3w" count="2890" computed="true">
+        <parameters xmi:id="_rLvpU-6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYUpMe6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; WHERE &quot;phone&quot; IS NULL " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zI8JYO6CEe-3BtIhUpyT3w" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_zI8JYe6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_zI8JYu6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_zI8JY-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_rLvpVO6CEe-3BtIhUpyT3w" count="2890" computed="true" distinctValueCount="179">
+        <parameters xmi:id="_rLvpVe6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQQO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;phone&quot; FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; ) A" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zJdt0O6CEe-3BtIhUpyT3w" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_zJdt0e6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_zJdt0u6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_zJdt0-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_rLvpVu6CEe-3BtIhUpyT3w" count="2890" computed="true" uniqueValueCount="0">
+        <parameters xmi:id="_rLvpV-6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQQe6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &quot;phone&quot;, COUNT(*) mycount FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot;  GROUP BY &quot;phone&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zJs-YO6CEe-3BtIhUpyT3w" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_zJs-Ye6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_zJs-Yu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_zJs-Y-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_zJs-ZO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_zJs-Ze6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zJs-Zu6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_zJs-Z-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_zJs-aO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_zJs-ae6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_rLvpWO6CEe-3BtIhUpyT3w" count="2890" computed="true" duplicateValueCount="179">
+        <parameters xmi:id="_rLvpWe6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQQu6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &quot;phone&quot;, COUNT(*) mycount FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot;  m  GROUP BY &quot;phone&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zJ2IUO6CEe-3BtIhUpyT3w" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_zJ2IUe6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_zJ2IUu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_zJ2IU-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_zJ2IVO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_zJ2IVe6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zJ2IVu6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_zJ2IV-6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_zJ2IWO6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_zJ2IWe6CEe-3BtIhUpyT3w" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_rLvpWu6CEe-3BtIhUpyT3w" count="2890" computed="true">
+        <parameters xmi:id="_rLvpW-6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQQ-6CEe-3BtIhUpyT3w" body="SELECT COUNT(&quot;phone&quot;) FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot;  WHERE LTRIM(RTRIM(&quot;phone&quot;)) = '' " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zKBHcO6CEe-3BtIhUpyT3w" name="Blank Count" label="Blank Count">
+          <taggedValue xmi:id="_zKBHce6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_zKBHcu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_zKBHc-6CEe-3BtIhUpyT3w" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_zKBHdO6CEe-3BtIhUpyT3w" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zKBHde6CEe-3BtIhUpyT3w" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_zKBHdu6CEe-3BtIhUpyT3w" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_zKBHd-6CEe-3BtIhUpyT3w" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_yjkygO6CEe-3BtIhUpyT3w" mode="ACED00057400044E554C4C">
+        <parameters xmi:id="_yjkyge6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Mode_0.1.definition#_ccIR4RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQRO6CEe-3BtIhUpyT3w" body="SELECT TOP 1   &quot;phone&quot;, COUNT(*) FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; m  GROUP BY &quot;phone&quot; ORDER BY COUNT(*) DESC " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zKXFsO6CEe-3BtIhUpyT3w" name="Mode" label="Mode">
+          <taggedValue xmi:id="_zKXFse6CEe-3BtIhUpyT3w" tag="Description" value="computes the mode (most probable value). For numerical data or continuous data, bins can be set in the parameters of this indicator. It is different from the average and from the median. Generalization of it is an histogram. It is good for addressing categorical attributes"/>
+          <taggedValue xmi:id="_zKXFsu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the most frequent value"/>
+          <sqlGenericExpression xmi:id="_zKXFs-6CEe-3BtIhUpyT3w" body="SELECT  &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY COUNT(*) DESC " language="SQL"/>
+          <sqlGenericExpression xmi:id="_zKXFtO6CEe-3BtIhUpyT3w" body="SELECT  &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY COUNT(*) DESC " language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zKXFte6CEe-3BtIhUpyT3w" body="SELECT  &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY COUNT(*) DESC " language="DB2"/>
+          <sqlGenericExpression xmi:id="_zKXFtu6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_zKXFt-6CEe-3BtIhUpyT3w" body="SELECT  &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_zKXFuO6CEe-3BtIhUpyT3w" body="SELECT  &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC " language="Hive" version=""/>
+          <sqlGenericExpression xmi:id="_zKXFue6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_yjkygu6CEe-3BtIhUpyT3w" count="2890" computed="true" distinctValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000E2839313629203830322D323935327372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000E2837313629203938362D3333353971007E000574000E2836313929203231302D3630333271007E00057400044E554C4C7371007E000300000000000009E674000E2832383129203438392D3936353671007E000574000E2838303529203437382D3737323471007E000574000E2835303729203630362D3231393271007E000574000E2838343529203830342D3633313271007E000574000E2836333129203534342D3437373271007E000574000E2837313729203132362D3837383771007E000578">
+        <parameters xmi:id="_yjkyg-6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQRe6CEe-3BtIhUpyT3w" body="SELECT TOP 10  &quot;phone&quot;, COUNT(*) c FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; t  GROUP BY &quot;phone&quot; ORDER BY c DESC" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zYBHMO6CEe-3BtIhUpyT3w" name="Frequency Table" label="Frequency Table">
+          <taggedValue xmi:id="_zYBHMe6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_zYBHMu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_zYBHM-6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_zYBHNO6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_zYBHNe6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zYBHNu6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_zYBHN-6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_zYBHOO6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_zYBHOe6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_yjkyhO6CEe-3BtIhUpyT3w" count="2890" computed="true" distinctValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000E2839313629203830322D323935327372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000E2837313629203938362D3333353971007E000574000E2836313929203231302D3630333271007E000574000E2832383129203438392D3936353671007E000574000E2838303529203437382D3737323471007E000574000E2835303729203630362D3231393271007E000574000E2838343529203830342D3633313271007E000574000E2836333129203534342D3437373271007E000574000E2837313729203132362D3837383771007E000574000E2836313929203935322D3936313371007E000578">
+        <parameters xmi:id="_yjkyhe6CEe-3BtIhUpyT3w"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Megha/API/MSSQL_Sales_Megha_0.1.item#_roxeXcD1Ee-VL9hfCaZTnQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_zYVQRu6CEe-3BtIhUpyT3w" body="SELECT TOP 10  &quot;phone&quot;, COUNT(*) c FROM &quot;Sales_Megha&quot;.&quot;dbo&quot;.&quot;Customers&quot; t  GROUP BY &quot;phone&quot; ORDER BY c ASC" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_zYJqEO6CEe-3BtIhUpyT3w" name="Low Frequency Table" label="Low Frequency Table">
+          <taggedValue xmi:id="_zYJqEe6CEe-3BtIhUpyT3w" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_zYJqEu6CEe-3BtIhUpyT3w" tag="Purpose" value="evaluates the less frequent records"/>
+          <sqlGenericExpression xmi:id="_zYJqE-6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_zYJqFO6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_zYJqFe6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_zYJqFu6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_zYJqF-6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_zYJqGO6CEe-3BtIhUpyT3w" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_rCauOe6CEe-3BtIhUpyT3w" dataFilter="_rLz6wO6CEe-3BtIhUpyT3w" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_rLt0IO6CEe-3BtIhUpyT3w" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_rLz6wO6CEe-3BtIhUpyT3w" name="column">
+    <ranges xmi:id="_rLz6we6CEe-3BtIhUpyT3w">
+      <expressions xmi:id="_rLz6wu6CEe-3BtIhUpyT3w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_rLz6w-6CEe-3BtIhUpyT3w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
