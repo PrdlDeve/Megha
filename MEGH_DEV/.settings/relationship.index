@@ -211,6 +211,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_L8NHcOz-Ee-nwKe3MbjwJA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_NRR1QO0EEe-nwKe3MbjwJA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_NRR1QO0EEe-nwKe3MbjwJA - ActiveLoansView1",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_MpQukFPbEe-naMwK30hlBw",
     "version" : "0.1",
     "type" : "job"
@@ -460,10 +475,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_AlY74NiUEe-DdKgUv25d4w",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_SYkPUDnzEe-L17apX-73jA",
     "version" : "Latest",
     "type" : "property"
@@ -475,10 +486,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_AlY74NiUEe-DdKgUv25d4w",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_SYkPUDnzEe-L17apX-73jA",
     "version" : "Latest",
     "type" : "property"
@@ -489,11 +496,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_AlY74NiUEe-DdKgUv25d4w",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_sq9JMN0yEe-NRMdcn4l3Bw",
