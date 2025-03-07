@@ -2,4 +2,6 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/connections/CP</deletedFolders>
   <deletedFolders>process/Test_Folder/CP</deletedFolders>
+  <deletedFolders>process/Use_Case/API/Melita</deletedFolders>
+  <deletedFolders>process/Use_Case/API/Melita/Usecase</deletedFolders>
 </recyclebin:RecycleBin>
