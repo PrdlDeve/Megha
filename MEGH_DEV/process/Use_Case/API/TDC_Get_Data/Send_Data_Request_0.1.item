@@ -102,11 +102,11 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.1.253:11480/MM/&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8080/services&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="getDataAccess" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
-      <elementValue elementRef="URI_PATTERN" value="/getdata" id="2"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/getdata&quot;" id="2"/>
       <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
       <elementValue elementRef="PRODUCES" value="XML" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
@@ -160,28 +160,17 @@
     <metadata connector="FLOW" name="sendRequest">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="logRequest" name="logRequest">
-      <column comment="" key="false" length="-1" name="EntityId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EntityDisplay" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConfigurationContentId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConfigurationContentName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConfigurationContentPath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConfigurationContentParentFolderId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NativeType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Username" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="getDataAccess" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="EntityId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0 //@node.1/@nodeData/@connections.9" xpath="getDataAccess/EntityId"/>
-        <nodes name="EntityDisplay" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1 //@node.1/@nodeData/@connections.10" xpath="getDataAccess/EntityDisplay"/>
-        <nodes name="ConfigurationContentId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2 //@node.1/@nodeData/@connections.11" xpath="getDataAccess/ConfigurationContentId"/>
-        <nodes name="ConfigurationContentName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3 //@node.1/@nodeData/@connections.12" xpath="getDataAccess/ConfigurationContentName"/>
-        <nodes name="ConfigurationContentPath" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4 //@node.1/@nodeData/@connections.13" xpath="getDataAccess/ConfigurationContentPath"/>
-        <nodes name="ConfigurationContentParentFolderId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5 //@node.1/@nodeData/@connections.14" xpath="getDataAccess/ConfigurationContentParentFolderId"/>
-        <nodes name="Name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6 //@node.1/@nodeData/@connections.15" xpath="getDataAccess/Name"/>
-        <nodes name="NativeType" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7 //@node.1/@nodeData/@connections.16" xpath="getDataAccess/NativeType"/>
-        <nodes name="Username" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8 //@node.1/@nodeData/@connections.17" xpath="getDataAccess/Username"/>
+        <nodes name="EntityId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="getDataAccess/EntityId"/>
+        <nodes name="EntityDisplay" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="getDataAccess/EntityDisplay"/>
+        <nodes name="ConfigurationContentId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="getDataAccess/ConfigurationContentId"/>
+        <nodes name="ConfigurationContentName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="getDataAccess/ConfigurationContentName"/>
+        <nodes name="ConfigurationContentPath" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="getDataAccess/ConfigurationContentPath"/>
+        <nodes name="ConfigurationContentParentFolderId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="getDataAccess/ConfigurationContentParentFolderId"/>
+        <nodes name="Name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="getDataAccess/Name"/>
+        <nodes name="NativeType" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="getDataAccess/NativeType"/>
+        <nodes name="Username" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="getDataAccess/Username"/>
       </inputTrees>
       <outputTrees name="sendRequest">
         <nodes name="body" expression="" type="id_Document" xpath="sendRequest/body">
@@ -202,17 +191,6 @@
           </children>
         </nodes>
       </outputTrees>
-      <outputTrees name="logRequest">
-        <nodes name="EntityId" expression="getDataAccess.EntityId" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="logRequest/EntityId"/>
-        <nodes name="EntityDisplay" expression="getDataAccess.EntityDisplay" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="logRequest/EntityDisplay"/>
-        <nodes name="ConfigurationContentId" expression="getDataAccess.ConfigurationContentId" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="logRequest/ConfigurationContentId"/>
-        <nodes name="ConfigurationContentName" expression="getDataAccess.ConfigurationContentName" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="logRequest/ConfigurationContentName"/>
-        <nodes name="ConfigurationContentPath" expression="getDataAccess.ConfigurationContentPath" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="logRequest/ConfigurationContentPath"/>
-        <nodes name="ConfigurationContentParentFolderId" expression="getDataAccess.ConfigurationContentParentFolderId" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="logRequest/ConfigurationContentParentFolderId"/>
-        <nodes name="Name" expression="getDataAccess.Name" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="logRequest/Name"/>
-        <nodes name="NativeType" expression="getDataAccess.NativeType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="logRequest/NativeType"/>
-        <nodes name="Username" expression="getDataAccess.Username" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="logRequest/Username"/>
-      </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.1"/>
@@ -223,15 +201,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.6"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.7"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.1/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.1/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.1/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.1/@nodes.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.1/@nodes.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.5" target="//@node.1/@nodeData/@outputTrees.1/@nodes.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.6" target="//@node.1/@nodeData/@outputTrees.1/@nodes.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.7" target="//@node.1/@nodeData/@outputTrees.1/@nodes.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.8" target="//@node.1/@nodeData/@outputTrees.1/@nodes.8"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="280">
@@ -246,53 +215,6 @@
     <metadata connector="FLOW" name="tRESTResponse_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Get_Catalog_Details"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="DEVELOPMENT:_0QGQcPgfEe-UX9_15D9K1g"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
-    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
-    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
-    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
-    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
   <connection connectorName="FLOW" label="getDataAccess" lineStyle="0" metaname="getDataAccess" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tXMLMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -327,17 +249,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="getDataAccess" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="sendRequest" lineStyle="0" metaname="sendRequest" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tRESTResponse_1">
+  <connection connectorName="FLOW" label="sendRequest" lineStyle="0" metaname="sendRequest" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendRequest" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="logRequest" lineStyle="0" metaname="logRequest" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="logRequest" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tRunJob_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>

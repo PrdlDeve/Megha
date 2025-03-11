@@ -230,11 +230,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "DEVELOPMENT:_0QGQcPgfEe-UX9_15D9K1g",
-    "version" : "Latest",
-    "type" : "job"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_MpQukFPbEe-naMwK30hlBw",
