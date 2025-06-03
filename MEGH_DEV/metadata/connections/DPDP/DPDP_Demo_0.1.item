@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_oe8swDuuEfCs7-OjBSHXGw" name="DPDP_Demo" id="_ey9IkDuuEfCs7-OjBSHXGw" label="DPDP_Demo" dataPackage="_jNlqIDxZEfCs7-OjBSHXGw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=Insurance_DPDP;" dbVersionString="MSSQL_PROP" Port="1433" Username="QDI4" Password="enc:system.encryption.key.v1:i56vMK2IcVjkGXbLgFz8rOVL4eBreGS8PVY8N873k6j1A8uplgjxn4c=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Insurance_DPDP" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="bronze" supportNLS="false">
+    <taggedValue xmi:id="_oe9T0DuuEfCs7-OjBSHXGw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_of1dkDuuEfCs7-OjBSHXGw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_of8yUDuuEfCs7-OjBSHXGw" tag="Status" value=""/>
+    <taggedValue xmi:id="_of8yUTuuEfCs7-OjBSHXGw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_of8yUjuuEfCs7-OjBSHXGw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_of8yUzuuEfCs7-OjBSHXGw" tag="Description" value=""/>
+    <taggedValue xmi:id="_of8yVDuuEfCs7-OjBSHXGw" tag="Author" value=""/>
+    <taggedValue xmi:id="_of8yVTuuEfCs7-OjBSHXGw" tag="otherParameter"/>
+    <taggedValue xmi:id="_ohZj0DuuEfCs7-OjBSHXGw" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_ohZj0TuuEfCs7-OjBSHXGw" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_ohZj0juuEfCs7-OjBSHXGw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_oe9T0TuuEfCs7-OjBSHXGw" key="CONN_PARA_KEY_USERNAME" value="QDI4"/>
+    <parameters xmi:id="_evrUYDxZEfCs7-OjBSHXGw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_jNlqIDxZEfCs7-OjBSHXGw" name="Insurance_DPDP" dataManager="_oe8swDuuEfCs7-OjBSHXGw"/>
+</xmi:XMI>
