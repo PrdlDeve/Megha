@@ -4,10 +4,20 @@
   <deletedFolders>process/Test_Folder/CP</deletedFolders>
   <deletedFolders>process/Use_Case/API/Melita</deletedFolders>
   <deletedFolders>process/Use_Case/API/Melita/Usecase</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/DPDP</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/DPDP_Project/Jun_2025</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/Demo</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/May_2025</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/May_2025/Services</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase/TDC_Get_Data</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase/TDC_Get_Data/DPDP_END_TO_END</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase/TDC_Get_Data/DPDP_END_TO_END/Consent_Portal</deletedFolders>
   <deletedItems id="_MRLUEBtwEfCRAIvfmd5yZQ" path="" type="METADATA_FILE_DELIMITED"/>
   <deletedItems id="_DuI50BjwEfCJnre6TKfyrg" path="Banking_Demo_V2" type="PROCESS"/>
   <deletedItems id="_Dw_3wA-0EfChb7MB8s3mHQ" path="Use_Case/API" type="PROCESS"/>
+  <deletedItems id="_uPS1MEBYEfCN0NL49qKwAg" path="Use_Case/QTDC_DPDPAct/DPDP_Project/Gold_Layer" type="PROCESS"/>
+  <deletedItems id="_Uq1-0EA9EfCWqPBf35hbPg" path="Use_Case/QTDC_DPDPAct/DPDP_Project/Silver_Layer" type="PROCESS"/>
   <deletedItems id="_KhUXMCDaEfCu7pX8j-5euQ" path="Routes_MM" type="ROUTE"/>
 </recyclebin:RecycleBin>
