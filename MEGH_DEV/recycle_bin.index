@@ -9,6 +9,19 @@
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/Demo</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/May_2025</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/May_2025/Services</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_API/TDC</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_API/TDC/API</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case/QTDC_DPDPAct</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case/QTDC_DPDPAct/TDC_MQL</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case/Use_Case</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case/Use_Case/QTDC_DPDPAct</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL/TDC/API/Use_Case/Use_Case/QTDC_DPDPAct/TDC_MQL</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL_V2/Use_Case</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL_V2/Use_Case/QTDC_DPDPAct</deletedFolders>
+  <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_MQL_V2/Use_Case/QTDC_DPDPAct/TDC_MQL</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase</deletedFolders>
   <deletedFolders>process/Use_Case/QTDC_DPDPAct/TDC_QS/Melita/Usecase/TDC_Get_Data</deletedFolders>
@@ -19,5 +32,7 @@
   <deletedItems id="_Dw_3wA-0EfChb7MB8s3mHQ" path="Use_Case/API" type="PROCESS"/>
   <deletedItems id="_uPS1MEBYEfCN0NL49qKwAg" path="Use_Case/QTDC_DPDPAct/DPDP_Project/Gold_Layer" type="PROCESS"/>
   <deletedItems id="_Uq1-0EA9EfCWqPBf35hbPg" path="Use_Case/QTDC_DPDPAct/DPDP_Project/Silver_Layer" type="PROCESS"/>
+  <deletedItems id="_2as70Ea4EfC-EPiVjmodmg" path="Use_Case/QTDC_DPDPAct/TDC_API" type="PROCESS"/>
+  <deletedItems id="_PnGV8EUQEfCbYLUYJlLyVg" path="Use_Case/QTDC_DPDPAct/TDC_QS" type="PROCESS"/>
   <deletedItems id="_KhUXMCDaEfCu7pX8j-5euQ" path="Routes_MM" type="ROUTE"/>
 </recyclebin:RecycleBin>
